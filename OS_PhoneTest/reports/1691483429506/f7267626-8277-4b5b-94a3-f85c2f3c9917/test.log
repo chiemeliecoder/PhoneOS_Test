@@ -1,0 +1,3 @@
+[2023-08-08 08:30:39] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-08 08:30:39] [1] [INFO] TEST [OS_PhoneTest - testWebView] STARTED at [04:30:39 2023-08-08]
+[2023-08-08 08:30:39] [1] [INFO] TEST [OS_PhoneTest - testWebView] PASSED at [04:30:39 2023-08-08]
