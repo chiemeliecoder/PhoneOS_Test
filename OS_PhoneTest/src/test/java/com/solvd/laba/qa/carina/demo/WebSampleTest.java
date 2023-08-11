@@ -81,29 +81,29 @@ public class WebSampleTest implements IAbstractTest {
 
         softAssert.assertAll();
     }
-
-    @Test
-    @MethodOwner(owner = "qpsdemo")
-    @TestLabel(name = "feature", value = { "web", "acceptance" })
-    public void testNewsSearch() {
-        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        homePage.open();
-        Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened!");
-
-        NewsPageBase newsPage = homePage.getFooterMenu().openNewsPage();
-        Assert.assertTrue(newsPage.isPageOpened(), "News page is not opened!");
-
-        final String searchQ = "iphone";
-        List<NewsItem> news = newsPage.searchNews(searchQ);
-        Assert.assertFalse(CollectionUtils.isEmpty(news), "News not found!");
-        SoftAssert softAssert = new SoftAssert();
-        for (NewsItem n : news) {
-            System.out.println(n.readTitle());
-            softAssert.assertTrue(StringUtils.containsIgnoreCase(n.readTitle(), searchQ),
-                    "Invalid search results for " + n.readTitle());
-        }
-        softAssert.assertAll();
-    }
+//
+//    @Test
+//    @MethodOwner(owner = "qpsdemo")
+//    @TestLabel(name = "feature", value = { "web", "acceptance" })
+//    public void testNewsSearch() {
+//        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+//        homePage.open();
+//        Assert.assertTrue(homePage.isPageOpened(), "Home page is not opened!");
+//
+//        NewsPageBase newsPage = homePage.getFooterMenu().openNewsPage();
+//        Assert.assertTrue(newsPage.isPageOpened(), "News page is not opened!");
+//
+//        final String searchQ = "iphone";
+//        List<NewsItem> news = newsPage.searchNews(searchQ);
+//        Assert.assertFalse(CollectionUtils.isEmpty(news), "News not found!");
+//        SoftAssert softAssert = new SoftAssert();
+//        for (NewsItem n : news) {
+//            System.out.println(n.readTitle());
+//            softAssert.assertTrue(StringUtils.containsIgnoreCase(n.readTitle(), searchQ),
+//                    "Invalid search results for " + n.readTitle());
+//        }
+//        softAssert.assertAll();
+//    }
 
     @Test()
     @MethodOwner(owner = "qpsdemo")

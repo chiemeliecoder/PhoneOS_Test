@@ -1,5 +1,9 @@
 package com.solvd.laba.qa.carina.demo.gui.pages.common;
 
+import com.solvd.laba.qa.carina.demo.gui.components.MerchItem;
+import com.solvd.laba.qa.carina.demo.gui.components.footer.FooterWalmartMenuBase;
+import com.solvd.laba.qa.carina.demo.gui.enums.Category;
+import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -26,10 +30,18 @@ public abstract class HomePageBase extends AbstractPage {
 
     public abstract AllBrandsPageBase openAllBrandsPage();
 
+    public abstract FooterWalmartMenuBase getFooterWalmartMenu();
+
+    public abstract CategoryBasePage selectCategory(Category name);
+
+    public abstract List<MerchItem> searchMerch(String searchInput);
+
+    public abstract MerchProductPageBase navNewItemSelect();
+
     @Override
     public void open() {
         super.open();
-        acceptCookies.clickIfPresent();
+        acceptCookies.clickIfPresent(10);
     }
 
 }

@@ -1,0 +1,31 @@
+[2023-08-11 02:13:03] [1] [INFO] 
+============= Basic configuration =============
+env=STAG
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://store.crunchyroll.com
+selenium_url=http://localhost:4723
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+newCommandTimeout=180
+automationName=uiautomator2
+browserName=chrome
+unicodeKeyboard=true
+platformName=ANDROID
+udid=emulator-5554
+deviceName=Pixel_3_API_30
+appWaitDuration=270000
+===============================================
+
+[2023-08-11 02:13:04] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-08-11 02:13:15] [1] [INFO] [TestNG] Running:
+  C:\Users\chiem\AppData\Local\JetBrains\IntelliJIdea2020.3\temp-testng-customsuite.xml
+
+[2023-08-11 02:13:15] [1] [INFO] Set thread-count=1
+[2023-08-11 02:13:15] [1] [INFO] Set data-provider-thread-count=1
+[2023-08-11 02:13:15] [1] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2023-08-11 02:13:25] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2023-08-11 02:13:25] [1] [INFO] RESULT #1: TEST [OS_PhoneTest - testMobileWebView] FAIL [log=file://C:\Users\chiem\OneDrive\Documents\Solvd\PhoneTest\PhoneOS_Test\OS_PhoneTest\.\reports\1691719983761/7aec4e5f-8b19-4f55-a1b4-9b358aa02099/test.log]
